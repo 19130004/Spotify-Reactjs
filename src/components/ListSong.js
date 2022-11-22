@@ -1,10 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-// import { Songs } from "../Context";
 import { getListSongs, selectSongs } from "../store/slice/SongsSlice";
 import { getSongById, selectSong } from "../store/slice/SongSlice";
 export default function ListSongs() {
-  // const { DataSongs, handleSetSong, song } = useContext(Songs);
   const [idSong, setidSong] = useState(0);
   const dispatch = useDispatch();
   const { songs } = useSelector(selectSongs);

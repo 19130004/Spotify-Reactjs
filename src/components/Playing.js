@@ -1,7 +1,5 @@
-// import React, { useContext } from "react";
 import AudioPlayer from "react-h5-audio-player";
 import "react-h5-audio-player/lib/styles.css";
-// import { Songs } from "../Context";
 import { useDispatch, useSelector } from "react-redux";
 import { getSongById, selectSong } from "../store/slice/SongSlice";
 import { selectSongs } from "../store/slice/SongsSlice";
